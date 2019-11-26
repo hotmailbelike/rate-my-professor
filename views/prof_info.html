@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<!-- navbar -->
-		<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3 sticky-top">
 			<div class="container">
 				<a class="navbar-brand" href="index.html">
 					<img src="/utils/img/Logo.PNG" id="logo" alt="" />
@@ -42,14 +42,218 @@
 			</div>
 		</div>
 
-		<!-- Button -->
+		<!-- Rate Button -->
 		<div class="container container3">
 			<button class="btn btn-primary btn1" type="button">Rate this Professor</button>
 		</div>
 
+		<!-- Rating Summary -->
+		<div class="container container4">
+			<div class="row">
+				<div class="col-4 bg-danger">
+					<h2 class="display-4 text-uppercase">Overall Quality</h2>
+					<h1 class="display-2">4.6</h1>
+				</div>
+				<div class="col-2 bg-info">
+					<p class="text-muted text-uppercase">% Would take again</p>
+					<h2>75%</h2>
+					<p class="text-muted text-uppercase">Level of Difficulty</p>
+					<h2>4.2/5</h2>
+				</div>
+				<div class="col-6 bg-light">
+					<h3>Tags for this Professor</h3>
+					<p class="mt-0 text-muted">See how other students describe this professor.</p>
+					<div class="tag-box">
+						<span class="tag">SKIP CLASS? YOU WON'T PASS</span>
+						<span class="tag">BEWARE OF POP QUIZZES</span>
+						<span class="tag">TOUGH GRADER</span>
+						<span class="tag">AMAZING LECTURES</span>
+					</div>
+					<a href="#" data-toggle="modal" data-target="#choose-tags" class="choose-tags">
+						Choose your tags
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Choose Tags Modal -->
+		<div class="modal show" id="choose-tags">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<form action="">
+						<div class="modal-header">
+							<h5 class="modal-title">Tag your Professor</h5>
+							<button class="close" data-dismiss="modal">×</button>
+						</div>
+						<div>
+							<div class="modal-body tags">
+								<a href="#" class="inactive">Gives good feedback</a>
+
+								<a href="#" class="inactive">Respected</a>
+
+								<a href="#" class="inactive">Lots of homework</a>
+
+								<a href="#" class="inactive">Accessible outside class</a>
+
+								<a href="#" class="inactive">Get ready to read</a>
+
+								<a href="#" class="inactive">Participation matters</a>
+
+								<a href="#" class="inactive">Skip class? You won't pass.</a>
+
+								<a href="#" class="inactive">Inspirational</a>
+
+								<a href="#" class="inactive">Graded by few things</a>
+
+								<a href="#" class="inactive">Test heavy</a>
+
+								<a href="#" class="inactive">Group projects</a>
+
+								<a href="#" class="inactive">Clear grading criteria</a>
+
+								<a href="#" class="inactive">Hilarious</a>
+
+								<a href="#" class="inactive">Beware of pop quizzes</a>
+
+								<a href="#" class="inactive">Amazing lectures</a>
+
+								<a href="#" class="inactive">Lecture heavy</a>
+
+								<a href="#" class="inactive">Caring</a>
+
+								<a href="#" class="inactive">EXTRA CREDIT</a>
+
+								<a href="#" class="inactive">So many papers</a>
+
+								<a href="#" class="inactive">Tough grader</a>
+							</div>
+						</div>
+
+						<div class="modal-footer">
+							<button type="submit" class="btn btn-primary submit-tags" data-dismiss="modal">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Comment Section -->
+		<section id="comments">
+			<div class="container container5">
+				<table class="comment-section table-striped">
+					<tbody>
+						<tr>
+							<th class="">Rating:</th>
+							<th class="">Class</th>
+							<th class="">Comment</th>
+						</tr>
+						<tr class="mt-3">
+							<td class="rating">
+								<div class="date">28/10/2018</div>
+								<div class="rating-block">
+									<div class="emoji"><i class="far fa-smile-beam"></i></div>
+									<span class="rating-type">Awesome</span>
+								</div>
+								<div class="breakdown">
+									<div class="break">
+										<div class="descriptor-container">
+											<span class="score good">5.0</span>
+											<span class="descriptor">Overall Quality</span>
+										</div>
+									</div>
+									<div class="break">
+										<div class="descriptor-container">
+											<span class="score inverse average">3.0</span>
+											<span class="descriptor">Level of Difficulty</span>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td class="class">
+								<span class="name "> <span class="response">ECON101</span></span>
+								<span class="credit">For Credit: <span class="response">Yes</span></span>
+								<span class="attendance">Attendance: <span class="response">Mandatory</span></span>
+							
+								<span class="textbook-used">Textbook Used: <span class="response">Yes</span></span>
+								<span class="would-take-again">Would Take Again: <span class="response">Yes</span></span>
+								<span class="grade">Grade Received: <span class="response">B</span></span>
+							
+							
+							</td>
+							<td class="comments">
+								<div class="tagbox">
+							
+									<span>ACCESSIBLE OUTSIDE CLASS</span>
+							
+									<span>RESPECTED</span>
+							
+									<span>GIVES GOOD FEEDBACK</span>
+							
+								</div>
+							
+								<p class="commentsParagraph">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magnam reprehenderit accusamus! Delectus aperiam, est voluptatibus, quo harum sequi cupiditate eius omnis esse, repudiandae vitae?
+								</p>								
+							</td>
+						</tr>
+						<tr class="mt-3">
+							<td class="rating">
+								<div class="date">28/10/2018</div>
+								<div class="rating-block">
+									<div class="emoji"><i class="far fa-smile-beam"></i></div>
+									<span class="rating-type">Awesome</span>
+								</div>
+								<div class="breakdown">
+									<div class="break">
+										<div class="descriptor-container">
+											<span class="score good">5.0</span>
+											<span class="descriptor">Overall Quality</span>
+										</div>
+									</div>
+									<div class="break">
+										<div class="descriptor-container">
+											<span class="score inverse average">3.0</span>
+											<span class="descriptor">Level of Difficulty</span>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td class="class">
+								<span class="name "> <span class="response">ECON101</span></span>
+								<span class="credit">For Credit: <span class="response">Yes</span></span>
+								<span class="attendance">Attendance: <span class="response">Mandatory</span></span>
+							
+								<span class="textbook-used">Textbook Used: <span class="response">Yes</span></span>
+								<span class="would-take-again">Would Take Again: <span class="response">Yes</span></span>
+								<span class="grade">Grade Received: <span class="response">B</span></span>
+							
+							
+							</td>
+							<td class="comments">
+								<div class="tagbox">
+							
+									<span>ACCESSIBLE OUTSIDE CLASS</span>
+							
+									<span>RESPECTED</span>
+							
+									<span>GIVES GOOD FEEDBACK</span>
+							
+								</div>
+							
+								<p class="commentsParagraph">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magnam reprehenderit accusamus! Delectus aperiam, est voluptatibus, quo harum sequi cupiditate eius omnis esse, repudiandae vitae?
+								</p>								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				</section>
+			</div>
+			
+
 		<!-- Bottom Navbar -->
 		<nav class="navbar fixed-bottom navbar-light bg-light">
-			<a class="navbar-brand" href="index.html">Didn't find who you were looking for? Click here to go back to your search result!</a>
+			<a class="navbar-brand" href="/views/prof_search_result.html">Didn't find who you were looking for? Click here to go back to your search result!</a>
 		</nav>
 		<!-- Scripts -->
 
