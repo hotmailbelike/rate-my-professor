@@ -1,0 +1,29 @@
+/* Add your styles here */
+#login-body {
+  background-color: #7effee;
+  height: 100%;
+}
+
+html,
+body {
+  /* height: 100%; */
+}
+
+.container {
+  height: 50%;
+  width: 50%;
+  /* display: flex; */
+
+  /* justify-content: center; */
+  /* align-items: center; */
+  background: white;
+  margin-top: 5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 30px grey;
+  /* border: red; */
+}
+
+h1 {
+  padding-top: 1rem;
+  text-align: center;
+}

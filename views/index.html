@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+		<title>Home</title>
+		<link href="/utils/css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="/utils/img/Logo.PNG" id="logo" alt="" />
+				</a>
+				<form class="form-inline">
+					<input id="search" class="form-control mr-sm-2" type="search" placeholder="Search for a Professor or School" aria-label="Search" />
+					<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+				</form>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="login.html">LOG IN / SIGN UP</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Search UI -->
+		<header class="background-img">
+			<div class="container pt-5">
+				<div class="option-block">
+					<h1 class="text-yellow ">
+						Find
+						<span id="change-color">What</span>
+						you are Looking For
+					</h1>
+					<div id="options" class="row">
+						<div id="professor" class="col-3">
+							<h2>Professor</h2>
+						</div>
+						<div id="school" class="col-3">
+							<h2>School</h2>
+						</div>
+						<div id="rate" class="col-3">
+							<h2>Rate</h2>
+
+							<!-- <h2><a href="">Rate</a></h2> -->
+						</div>
+					</div>
+				</div>
+				<div class="search-block">
+					<div align="center" class="search-prof pb-5">
+						<h2>Find a Professor</h2>
+						<form>
+							<div class="form-group mb-1">
+								<label>I'm looking for a professor at</label>
+								<input placeholder="Your School" type="search" class=" form-control" />
+							</div>
+							<div class="form-group">
+								<label>named</label>
+								<input placeholder="Professor's name" type="search" class="form-control" />
+							</div>
+							<button type="submit" class="btn btn-info btn-block">Submit</button>
+							<br />
+							<a href="#">Cancel</a>
+						</form>
+					</div>
+					<div align="center" class="search-school">
+						<h2>Find your School</h2>
+						<form>
+							<div class="form-group">
+								<label>Find your school</label>
+								<input placeholder="School Name" type="search" class="form-control" />
+							</div>
+							<button type="submit" class="btn btn-info btn-block">Submit</button>
+							<br />
+							<a href="#">Cancel</a>
+						</form>
+					</div>
+					<div align="center" class="rate-prof">
+						<h2>Rate your Professor</h2>
+						<form>
+							<div class="form-group">
+								<label>Rate your Professor</label>
+								<input placeholder="Professor's name" type="search" class="form-control" />
+							</div>
+							<button type="submit" class="btn btn-info btn-block">Submit</button>
+							<br />
+							<a href="#">Cancel</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<script src="/utils/script/jquery-3.3.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="/utils/script/index-script.js"></script>
+	</body>
+</html>

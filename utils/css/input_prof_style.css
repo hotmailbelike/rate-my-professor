@@ -1,0 +1,30 @@
+body {
+	background: url('../img/input_background.png');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	zoom: 1.2;
+}
+
+.col-md-6 {
+	/* border-right: #f2f2f2 solid 0.5px; */
+	color: #f2f2f2;
+}
+
+.bd {
+	/* border-right: #f2f2f2 solid 0.5px; */
+}
+
+h3 {
+	color: white;
+	margin-bottom: 3rem;
+}
+
+form {
+	color: white;
+}
+
+form label {
+	font-size: medium;
+}

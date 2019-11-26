@@ -1,0 +1,68 @@
+body {
+	padding-bottom: 100px;
+}
+
+.navbar-brand {
+	width: 20%;
+}
+
+#logo {
+	width: 100%;
+	height: auto;
+}
+
+#search {
+	width: 30rem;
+	height: 2rem;
+	background-color: rgba(88, 86, 86, 0.644);
+}
+
+.btn.btn-outline-light {
+	line-height: 1px;
+	height: 2rem;
+}
+
+#border-top-bottom {
+	border-top: 0.01rem solid black;
+	border-bottom: 0.01rem solid black;
+}
+
+body {
+	background: url('/utils/img/search-background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container2 {
+	background-color: rgb(255, 255, 255);
+	padding: 0;
+}
+
+#body {
+	height: 60%;
+}
+
+tr:nth-child(even) {
+	background-color: #c3c3c3;
+}
+
+table {
+	font-size: larger;
+}
+
+.smaller {
+	width: 40%;
+}
+
+tbody tr:hover {
+	color: rgb(132, 0, 255);
+	cursor: pointer;
+}
+
+.fixed-bottom {
+	margin-top: 10px;
+}
+
+.img-fluid {
+	max-width: 50% !important;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous" />
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<title>Enter Faculty Data</title>
+		<link rel="stylesheet" href="../utils/css/input_prof_style.css" />
+		<script src="https://kit.fontawesome.com/4b009e3983.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 col-sm-12 bd">
+					<h3><i class="fas fa-pen"></i> Input Faculty Info:</h3>
+					<form action="" method="" class="form-horizontal">
+						<div class="form-group">
+							<label for="name" class="col-sm-2 control-label">Name</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" name="name" id="name" placeholder="Name" required />
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="photo" class="col-sm-2 control-label">Photo</label>
+							<div class="col-sm-10">
+								<input type="url" class="form-control" name="photo" id="photo" placeholder="Insert Photo URL" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="university year" class="col-sm-2 control-label">University</label>
+							<div class="col-sm-10">
+								<select class="form-control" name="University" id="University" required>
+									<option value="" selected disabled>University</option>
+									<option value="Independent University University, IUB">IUB</option>
+									<option value="BRAC University, BRAC">BRAC</option>
+									<option value="American International University Bangladesh, AIUB">AIUB</option>
+									<option value="North South University, NSU">NSU</option>
+									<option value="East West University, EWU">EWU</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="school" class="col-sm-2 control-label">School</label>
+							<div class="col-sm-3">
+								<select class="form-control" name="school" id="school" required>
+									<option value="" selected disabled>School</option>
+									<option value="isb">isb</option>
+									<option value="secs">secs</option>
+									<option value="sesm">sesm</option>
+									<option value="slas">slas</option>
+									<option value="sph">sph</option>
+									<option value="sls">sls</option>
+								</select>
+							</div>
+							<label for="dept" class="col-sm-2 control-label">Dept</label>
+							<div class="col-sm-5">
+								<select class="form-control" name="dept" id="dept" required>
+									<option value="" selected disabled>Dept</option>
+									<option value="computer science & engineering">Computer Science & Engineering</option>
+									<option value="electrical & electronic engineering">Electrical & Electronic Engineering</option>
+									<option value="physical sciences">Physical Sciences</option>
+									<option value="environmental science and management">Environmental Science And Management</option>
+									<option value="liberal arts and social sciences">Liberal Arts and Social Sciences</option>
+									<option value="business">Business</option>
+									<option value="english">English</option>
+									<option value="life science">Life Science</option>
+									<option value="law">Law</option>
+									<option value="pharmacy">Pharmacy</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<button type="submit" class="btn btn-default">Input</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<br />
+			</div>
+		</div>
+	</body>
+</html>

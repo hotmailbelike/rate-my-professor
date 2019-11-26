@@ -1,0 +1,49 @@
+body {
+	padding-bottom: 100px;
+	background: rgb(211, 211, 211);
+}
+
+.navbar-brand {
+	width: 20%;
+}
+
+#logo {
+	width: 100%;
+	height: auto;
+}
+
+#search {
+	width: 30rem;
+	height: 2rem;
+	background-color: rgba(88, 86, 86, 0.644);
+}
+
+.btn.btn-outline-light {
+	line-height: 1px;
+	height: 2rem;
+}
+
+.container2 {
+	margin-top: 50px;
+}
+
+.col-md-4 {
+	/* border: 2px red solid; */
+}
+
+#name {
+	padding-top: 30%;
+}
+
+.container3 {
+	margin-top: 50px;
+}
+
+.btn1 {
+	padding: 15px !important;
+	font-size: larger;
+}
+
+.btn1:hover {
+	background-color: limegreen;
+}

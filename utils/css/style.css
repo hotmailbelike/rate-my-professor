@@ -1,0 +1,105 @@
+.navbar-brand {
+	width: 20%;
+}
+
+#logo {
+	width: 100%;
+	height: auto;
+}
+
+#search {
+	width: 30rem;
+	height: 2rem;
+	background-color: rgba(88, 86, 86, 0.644);
+}
+
+.background-img {
+	background-image: url('../img/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 400px;
+	margin-top: -1rem;
+}
+
+h1.text-yellow {
+	color: rgb(255, 255, 0);
+	text-align: center;
+}
+
+#change-color {
+	color: lawngreen;
+}
+
+.col-3 h2 {
+	color: white;
+	text-align: center;
+	/* display: inline-block; */
+}
+
+.col-3:hover {
+	background: rgb(255, 136, 0);
+	cursor: pointer;
+}
+
+.col-3 {
+	margin-left: 2rem;
+	background: rgba(0, 0, 0, 0.726);
+	padding: 1rem;
+	/* border: 1px solid red; */
+}
+
+#options {
+	margin-left: 8rem;
+	margin-top: 4rem;
+}
+
+.col-3 a {
+	text-decoration: none;
+}
+
+.btn.btn-outline-light {
+	line-height: 1px;
+	height: 2rem;
+}
+
+.search-block {
+	margin: auto;
+	width: 25%;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+	color: gainsboro;
+}
+
+input::placeholder {
+	text-align: center;
+}
+
+.form-group label {
+	/* font-weight: bold; */
+	font-size: 1.3rem;
+}
+
+.form-group input {
+	text-align: center;
+	border-radius: 2px !important;
+	height: 3rem !important;
+}
+
+.search-block h2 {
+	margin-bottom: 2rem;
+	font-weight: bold;
+	font-size: 3rem;
+}
+
+.btn-block {
+	border-radius: 2px !important;
+	color: black;
+}
