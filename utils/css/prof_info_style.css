@@ -24,11 +24,7 @@ body {
 }
 
 .container2 {
-	margin-top: 50px;
-}
-
-.col-md-4 {
-	/* border: 2px red solid; */
+	margin-top: 40px;
 }
 
 #name {
@@ -36,7 +32,7 @@ body {
 }
 
 .container3 {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 .btn1 {
@@ -46,4 +42,138 @@ body {
 
 .btn1:hover {
 	background-color: limegreen;
+}
+
+.img-fluid {
+	max-width: 90%;
+}
+
+.container4 {
+	margin-top: 30px;
+}
+
+.col-4 {
+	text-align: center;
+}
+
+.col-2 {
+	text-align: center;
+}
+
+.tag {
+	display: block;
+	float: left;
+	padding: 5px 7px;
+	width: auto;
+	background: #e5e5dd;
+	color: #797979;
+	font-weight: 700;
+	font-family: 'Source Sans Pro';
+	text-decoration: none;
+	font-size: 14px;
+	margin-right: 6px;
+	margin-bottom: 6px;
+}
+
+.choose-tags {
+	float: left;
+	clear: both;
+	font-family: 'Source Sans Pro Semibold';
+	text-decoration: none;
+	font-size: 14px;
+	margin-top: 15px;
+	color: white;
+	background: #00adee;
+	letter-spacing: 0.07em;
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-transform: uppercase;
+}
+
+.choose-tags:hover {
+	text-decoration: none;
+}
+
+#choose-tags .tags a {
+	display: block;
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	text-transform: uppercase;
+	width: auto;
+	background: #b8b8b3;
+	color: #fff;
+	font-family: 'Source Sans Pro Black';
+	letter-spacing: 0.14em;
+	text-decoration: none;
+	font-size: 12px;
+	margin-right: 6px;
+	margin-bottom: 6px;
+}
+
+.tags {
+	overflow-y: auto;
+	width: 100%;
+	display: block;
+}
+
+#comments {
+	margin-top: 40px;
+}
+
+.rating-block,
+.breakdown {
+	display: block;
+}
+
+table tbody tr th,
+table tbody tr td {
+	text-align: left;
+}
+
+table {
+	font-size: larger;
+}
+
+.rating {
+	width: 30%;
+}
+.class {
+	width: 25%;
+}
+.comments {
+	width: 65%;
+}
+
+.emoji,
+.rating-type {
+	float: left;
+}
+
+.rating-type {
+	margin-left: 20px;
+}
+
+.score {
+	float: left;
+	clear: both;
+}
+
+.breakdown {
+	float: left;
+	clear: both;
+}
+
+.descriptor-container {
+	display: table;
+}
+
+.descriptor {
+	margin-left: 20px;
 }
