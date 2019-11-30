@@ -11,7 +11,7 @@ require('./models/professor-model');
 const port = process.env.PORT || 3000;
 
 //Get Controllers
-const profController = require('./controllers/');
+const profController = require('./controllers/professor-controller');
 
 const app = express();
 
@@ -29,7 +29,7 @@ app.use(
 app.use(express.json());
 
 //fire controller
-// app.use();
+app.use(profController);
 
 //set up views engine
 app.set('view engine', 'hbs');

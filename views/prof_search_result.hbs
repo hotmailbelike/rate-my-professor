@@ -42,66 +42,14 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
+					{{#each info}}
+					<tr id="{{this._id}}">
 						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td id="id-from-backend">Mark</td>
+						<td id="id-from-backend">{{this.name}}</td>
 					</tr>
-					<tr>
-						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td id="id-from-backend">Jacob</td>
-					</tr>
-					<tr>
-						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td id="id-from-backend">Larry</td>
-					</tr>
-					<tr>
-						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td id="id-from-backend">Mark</td>
-					</tr>
-					<tr>
-						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td id="id-from-backend">Jacob</td>
-					</tr>
-					<tr>
-						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td id="id-from-backend">Larry</td>
-					</tr>
-					<tr>
-						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td>Mark</td>
-					</tr>
-					<tr>
-						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td>Jacob</td>
-					</tr>
-					<tr>
-						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td>Larry</td>
-					</tr>
-					<tr>
-						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td>Mark</td>
-					</tr>
-					<tr>
-						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td>Jacob</td>
-					</tr>
-					<tr>
-						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td>Larry</td>
-					</tr>
-					<tr>
-						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td>Mark</td>
-					</tr>
-					<tr>
-						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td>Jacob</td>
-					</tr>
-					<tr>
-						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td>Larry</td>
-					</tr>
+					{{/each}}
+
+
 				</tbody>
 			</table>
 		</div>
