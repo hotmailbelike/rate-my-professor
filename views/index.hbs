@@ -15,8 +15,8 @@
 			<a class="navbar-brand" href="index.html">
 				<img src="/img/Logo.PNG" id="logo" alt="" />
 			</a>
-			<form class="form-inline">
-				<input id="search" class="form-control mr-sm-2" type="search" placeholder="Search for a Professor or School" aria-label="Search" />
+			<form autocomplete="off" class="nav-form form-inline">
+				<input id="search" class="form-control mr-sm-2" type="search" placeholder="Search for a Professor" aria-label="Search" />
 				<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
 			</form>
 			<ul class="navbar-nav">
@@ -57,10 +57,12 @@
 						<div class="form-group mb-1">
 							<label>I'm looking for a professor at</label>
 							<input placeholder="Your School" type="search" class="school form-control" />
+							<div class="text-danger missing missingSchool" hidden>^This Field is required</div>
 						</div>
 						<div class="form-group">
 							<label>named</label>
 							<input placeholder="Professor's name" type="search" class="name form-control" />
+							<div class="text-danger missing missingName" hidden>^This Field is required</div>
 						</div>
 						<button id="search1" type="submit" class="btn btn-info btn-block">Submit</button>
 						<br />
@@ -73,6 +75,8 @@
 						<div class="form-group">
 							<label>Find your school</label>
 							<input placeholder="School Name" type="search" class="school form-control" />
+							<div class="text-danger missing" hidden>^This Field is required</div>
+							<div class="suggesstion-box"></div>
 						</div>
 						<button id="search2" type="submit" class="btn btn-info btn-block">Submit</button>
 						<br />
@@ -85,6 +89,7 @@
 						<div class="form-group">
 							<label>Rate your Professor</label>
 							<input placeholder="Professor's name" type="search" class="name form-control" />
+							<div class="text-danger missing" hidden>^This Field is required</div>
 						</div>
 						<button id="search3" type="submit" class="btn btn-info btn-block">Submit</button>
 						<br />
@@ -96,6 +101,7 @@
 	</header>
 
 	<script src="/script/jquery-3.3.1.min.js"></script>
+	<script src="/script/jquery-ui.min.js"></script>
 	{{!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> --}}
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
 		crossorigin="anonymous"></script>

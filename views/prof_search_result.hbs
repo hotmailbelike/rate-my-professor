@@ -17,16 +17,16 @@
 	<!-- navbar -->
 	<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3 sticky-top">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">
+			<a class="navbar-brand" href="/home">
 				<img src="/img/Logo.PNG" id="logo" alt="" />
 			</a>
-			<form class="form-inline">
+			<form autocomplete="off" class="nav-form form-inline">
 				<input id="search" class="form-control mr-sm-2" type="search" placeholder="Search for a Professor or School" aria-label="Search" />
 				<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
 			</form>
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="login.html">LOG IN / SIGN UP</a>
+					<a class="nav-link" href="/login">LOG IN / SIGN UP</a>
 				</li>
 			</ul>
 		</div>
@@ -45,7 +45,7 @@
 					{{#each info}}
 					<tr id="{{this._id}}">
 						<th scope="row"><i class="fas fa-user-tie"></i> Professor</th>
-						<td id="id-from-backend">{{this.name}}</td>
+						<td>{{this.name}}</td>
 					</tr>
 					{{/each}}
 
@@ -57,7 +57,7 @@
 
 	<!-- Bottom Navbar -->
 	<nav class="navbar fixed-bottom navbar-light bg-light">
-		<a class="navbar-brand" href="index.html">Didn't find what you were looking for? Click here to go back and search again!</a>
+		<a class="navbar-brand" href="/home">Didn't find what you were looking for? Click here to go back and search again!</a>
 	</nav>
 
 	<!-- Scripts -->

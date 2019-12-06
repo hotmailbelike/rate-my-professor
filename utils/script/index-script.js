@@ -58,12 +58,28 @@ $('a').click(function() {
 	$('.search-school').hide();
 	$('.rate-prof').hide();
 	$('.option-block').show();
+	$('.missing').attr('hidden', 'true');
 });
+
+//Searches
 
 $('#search1').click(function() {
 	var name = $('#search-prof .name').val();
 	var school = $('#search-prof .school').val();
 	var searchTerm = { name, school };
+
+	if (!name && !school) {
+		$('#search-prof .missing').removeAttr('hidden');
+		return;
+	}
+	if (!school) {
+		$('#search-prof .missingSchool').removeAttr('hidden');
+		return;
+	}
+	if (!name) {
+		$('#search-prof .missingName').removeAttr('hidden');
+		return;
+	}
 
 	// $.ajax({
 	// 	method: 'GET',
@@ -83,6 +99,10 @@ $('#search1').click(function() {
 $('#search2').click(function() {
 	var school = $('#search-school .school').val();
 	var searchTerm = { school };
+	if (!school) {
+		$('#search-school .missing').removeAttr('hidden');
+		return;
+	}
 
 	let href = '/home/search_school?school=' + school;
 
@@ -104,6 +124,11 @@ $('#search3').click(function() {
 
 	let href = '/home/rate_prof?name=' + name;
 
+	if (!name) {
+		$('#rate-prof .missing').removeAttr('hidden');
+		return;
+	}
+
 	window.location.href = href;
 
 	// $.ajax({
@@ -114,4 +139,161 @@ $('#search3').click(function() {
 	// 	.done((res) => {})
 	// 	.fail((res) => {});
 	// // console.log(name);
+});
+
+$('.nav-form').submit(function(e) {
+	e.preventDefault();
+	var name = $('#search').val();
+	// console.log(name);
+	if (!name) {
+		return;
+	}
+	let href = '/home/rate_prof?name=' + name;
+	window.location.href = href;
+});
+
+//Autocomplete
+
+function onlyUnique(value, index, self) {
+	return self.indexOf(value) === index;
+}
+
+$('#search-school .school').keyup(function() {
+	var data = [];
+	var school = $(this).val();
+
+	if (school === '') {
+		return;
+	}
+
+	$.ajax({
+		method: 'POST',
+		url: '/home/search_school/' + school
+		// data: searchTerm
+	})
+		.done((res) => {
+			res.forEach((i) => {
+				data.push(i.uni);
+			});
+
+			data = data.filter(onlyUnique);
+
+			// console.log(data);
+			$(this).autocomplete({
+				source: data
+			});
+		})
+		.fail((res) => {});
+});
+
+$('#rate-prof .name').keyup(function() {
+	var data = [];
+	var name = $(this).val();
+	// console.log(name);
+
+	if (name === '') {
+		return;
+	}
+
+	$.ajax({
+		method: 'POST',
+		url: '/home/search_prof/' + name
+		// data: searchTerm
+	})
+		.done((res) => {
+			res.forEach((i) => {
+				data.push(i.name);
+			});
+
+			// data = data.filter(onlyUnique);
+
+			// console.log(data);
+			$(this).autocomplete({
+				source: data
+			});
+		})
+		.fail((res) => {});
+});
+
+var globalSchool;
+
+$('#search-prof .school').keyup(function() {
+	var data = [];
+	var school = $(this).val();
+
+	if (school === '') {
+		return;
+	}
+	if (school === '') {
+		return;
+	}
+	if (school === undefined) {
+		return;
+	}
+	if (!school) {
+		return;
+	}
+
+	globalSchool = school;
+
+	$.ajax({
+		method: 'POST',
+		url: '/home/search_school/' + school
+		// data: searchTerm
+	})
+		.done((res) => {
+			res.forEach((i) => {
+				data.push(i.uni);
+			});
+
+			data = data.filter(onlyUnique);
+
+			// console.log(data);
+			$(this).autocomplete({
+				source: data
+			});
+		})
+		.fail((res) => {});
+});
+
+$('#search-prof .name').keyup(function() {
+	var data = [];
+	var name = $(this).val();
+	var school = globalSchool;
+	var searchTerm = JSON.stringify({ name, school });
+
+	// console.log(globalSchool);
+
+	if (name === '' || school === '') {
+		return;
+	}
+	if (name === '') {
+		return;
+	}
+	if (school === '') {
+		return;
+	}
+	if (school === undefined) {
+		return;
+	}
+	if (!school) {
+		return;
+	}
+
+	$.ajax({
+		method: 'POST',
+		url: '/home/search_prof_with_school/' + searchTerm
+		// data: searchTerm
+	})
+		.done((res) => {
+			res.forEach((i) => {
+				data.push(i.name);
+			});
+			// data = data.filter(onlyUnique);
+			// console.log(data);
+			$(this).autocomplete({
+				source: data
+			});
+		})
+		.fail((res) => {});
 });
