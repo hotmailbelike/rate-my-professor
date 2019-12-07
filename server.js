@@ -7,11 +7,13 @@ mongoose.connect('mongodb+srv://user_0:papponi312@cluster0-vq45a.mongodb.net/pro
 
 //Get Models
 require('./models/professor-model');
+require('./models/comment-model');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 //Get Controllers
 const profController = require('./controllers/professor-controller');
+const commentController = require('./controllers/comment-controller');
 
 const app = express();
 
@@ -30,6 +32,7 @@ app.use(express.json());
 
 //fire controller
 app.use(profController);
+app.use(commentController);
 
 //set up views engine
 app.set('view engine', 'hbs');
@@ -51,6 +54,10 @@ app.get('/login', (req, res) => {
 
 app.get('/input_prof_info', (req, res) => {
 	res.render('input_prof_info');
+});
+
+app.get('/review', (req, res) => {
+	res.render('reviewPage');
 });
 
 /*==============================================================================================================*/

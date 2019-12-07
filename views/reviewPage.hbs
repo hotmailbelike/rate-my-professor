@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
+    crossorigin="anonymous">
+  <title>Rate</title>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="/css/reviewPage_style.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="/img/Logo.PNG" id="logo" alt="" />
+      </a>
+      <form autocomplete="off" class="nav-form form-inline">
+        <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search for a Professor" aria-label="Search" />
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/login">LOG IN / SIGN UP</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="jumbotron">
+    <div class="container">
+      <div class="jumbotron">
+        <h1 id="Jcolor">Rating Do's and Don'ts</h1>
+        <hr>
+        <div class="parent">
+          <div class="item">
+            <div class="label">
+              <h3>Do</h3>
+            </div>
+            <div class="description">Double check your comments before posting. Course codes must be accurate, and it doesn’t hurt to check grammar.</div>
+          </div>
+          <div class="item">
+            <div class="label">
+              <h3>Do</h3>
+            </div>
+            <div class="description">Discuss the professor’s professional abilities including teaching style and ability to convey the material clearly.</div>
+          </div>
+          <div class="item">
+            <div class="label">
+              <h3>Don't</h3>
+            </div>
+            <div class="description">Use profanity, name-calling, or derogatory terms. And, don’t claim that the professor shows bias or favoritism for or against students.</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="rating">
+    <form class={{id}} id="form">
+      <div class="rating">
+        <h1><u>It's your turn to grade Professor {{name}}</u></h1>
+
+        <ol>
+          <li->
+            <h3 id="Rating">Course ID</h3>
+            <!-- <select class="form-control form-control-sm getCode">
+                              <option  value="" disabled selected hidden>Enter course code</option>
+                              <option  value="CSE301">CSE301</option>
+                              <option  value="CSE214">CSE214</option>
+                              <option  value="CSE412">CSE412</option>
+                        
+                            </select> -->
+            <div class="btn-group dropright">
+              <input id="course" class="inCode" type="text" placeholder="Enter Code">
+              <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropright</span>
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#!">CSE210</a>
+                <a class="dropdown-item" href="#!">EEE101</a>
+                <a class="dropdown-item" href="#!">MKT340</a>
+              </div>
+            </div>
+            </li>
+            <br>
+            <br>
+            <li>
+              <h3 id="Rating">Rate your professor</h3>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="star-rating">
+                      <span class="fa fa-star-o ryp" data-rating="1"></span>
+                      <span class="fa fa-star-o ryp" data-rating="2"></span>
+                      <span class="fa fa-star-o ryp" data-rating="3"></span>
+                      <span class="fa fa-star-o ryp" data-rating="4"></span>
+                      <span class="fa fa-star-o ryp" data-rating="5"></span>
+                      <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <br>
+            <li>
+              <h3 id="Rating">Level Of Difficulty</h3>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="star">
+                      <span class="fa fa-star-o lod" data-rating="1"></span>
+                      <span class="fa fa-star-o lod" data-rating="2"></span>
+                      <span class="fa fa-star-o lod" data-rating="3"></span>
+                      <span class="fa fa-star-o lod" data-rating="4"></span>
+                      <span class="fa fa-star-o lod" data-rating="5"></span>
+                      <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <br>
+            <li>
+              <h3 id="Rating">Would you like to take this prof again?</h3>
+              <input type="radio" class="radio" name="ques" value="Yes">Yes
+              <input checked="checked" type="radio" class="radio" name="ques" value="No">No<br>
+            </li>
+            <br>
+
+            <li>
+              <h3 id="Rating">Was This Class taken for Credit?</h3>
+              <input type="radio" class="radio" name="qu" value="Yes">Yes
+              <input checked="checked" type="radio" class="radio" name="qu" value="No">No<br>
+            </li>
+            <br>
+            <li>
+              <h3 id="Rating">Textbook Used?</h3>
+              <input type="radio" class="radio" name="question" value="Yes">Yes
+              <input checked="checked" type="radio" class="radio" name="question" value="No">No<br>
+            </li>
+            <br>
+            <li>
+              <h3 id="Rating">Attendance Mandatory?</h3>
+              <input type="radio" class="radio" name="q" value="Mandatory">Yes
+              <input checked="checked" type="radio" class="radio" name="q" value="Not Mandatory">No<br>
+            </li>
+
+            <br>
+            <li>
+              <h3 id="Rating">Grade Recieved</h3>
+              <select class="form-control form-control-sm grade">
+                <option value="" disabled selected hidden>Select</option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="B-">B-</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="C-">C-</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="D-">D-</option>
+                <option value="F">F</option>
+                <option value="Drop">Drop</option>
+                <option value="Withdrawal">Withdrawal</option>
+                <option value="Audit/No grade">Audit/No grade</option>
+                <option value="Not Sure Yet">Not Sure Yet</option>
+                <option value="Rather Not Say">Rather Not Say</option>
+
+
+
+              </select>
+            </li>
+            <br>
+
+            <li>
+              <div class="form-element tagger">
+                <h3 id="rating">Select Tags That Best Describe This Professor</h3>
+                <h6>Choose Carefully The Fate Of The Future Student Lies In Your hand</h6>
+                <div class="tag-holder">
+                  <a href="#!" class="tag">Gives Feedback</a>
+                  <a href="#!" class="tag">Respected</a>
+                  <a href="#!" class="tag">Lots Of Homework</a>
+                  <a href="#!" class="tag">Accessible Outside Class</a>
+                  <a href="#!" class="tag">Get Ready To Read</a>
+                  <a href="#!" class="tag">Participation matters</a>
+                  <a href="#!" class="tag">Inspirational</a>
+                  <a href="#!" class="tag">Skip Class? You Won't Pass</a>
+                  <a href="#!" class="tag">Test Heavy</a>
+                  <a href="#!" class="tag">Graded By Few things</a>
+                  <a href="#!" class="tag">Group Projects</a>
+                  <a href="#!" class="tag">Clear Grading criteria</a>
+                  <a href="#!" class="tag">Hilarious</a>
+                  <a href="#!" class="tag">Beware Of Pop Quizzes</a>
+                  <a href="#!" class="tag">Amazing Lectures</a>
+                  <a href="#!" class="tag">Lecture Heavy</a>
+                  <a href="#!" class="tag">Caring</a>
+                  <a href="#!" class="tag">Extra credit</a>
+                  <a href="#!" class="tag">So Many Papers</a>
+                  <a href="#!" class="tag">Tough Grader</a>
+                </div>
+                <input type="hidden" id="tags" name="tags" value="">
+              </div>
+            </li>
+            <div class="form-element comment-box required">
+
+
+              <div class="input">
+                <li>
+                  <h3 id="Rating">Here's Your Chance To Be More Specific</h3>
+                  <textarea rows="8" cols="40" class="textarea"></textarea>
+                </li>
+
+              </div>
+            </div>
+
+
+
+            <button type="submit" class="btn btn-primary getInfo" id="Submit">Submit</button>
+        </ol>
+      </div>
+
+
+    </form>
+  </section>
+  <script src="/script/jquery-3.3.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+    crossorigin="anonymous"></script>
+  <script src='/script/reviewPage_script.js'></script>
+</body>
+
+</html>
