@@ -163,6 +163,97 @@ input::placeholder {
 }
 
 .btn-block {
-	border-radius: 2px !important;
+	/* border-radius: 25px !important; */
 	color: black;
+}
+
+.image img {
+	margin-left: 12%;
+	height: 500px;
+}
+
+.caro {
+	margin-bottom: 2rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.open-button {
+	background-color: rgba(28, 102, 240, 0.863);
+	color: black;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	position: fixed;
+	top: 10rem;
+	right: 28px;
+	width: 5rem;
+}
+.chat-popup {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 15px;
+	border: 3px solid #f1f1f1d2;
+	z-index: 9;
+}
+.form-container {
+	max-width: 300px;
+	padding: 10px;
+	background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+	resize: none;
+	min-height: 200px;
+}
+
+.form-container textarea:focus {
+	background-color: white;
+	outline: none;
+}
+
+/* Sets style for the submit/send button */
+.form-container .btn {
+	background-color: rgba(28, 102, 240, 0.863);
+	color: black;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 10px;
+	opacity: 0.8;
+}
+
+/* Adding red background color to the cancel button */
+.form-container .cancel {
+	background-color: red;
+}
+
+/* Adding some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+	opacity: 1;
+}
+
+li {
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	.col-3 {
+		flex: 50%;
+		max-width: 50%;
+		margin-top: 1rem;
+	}
 }

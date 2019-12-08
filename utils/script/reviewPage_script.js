@@ -143,6 +143,10 @@ $('#form').submit(function(e) {
 
 	var emote, rating_in_words, course;
 
+	if (!rate) {
+		rate = 2;
+	}
+
 	switch (rate) {
 		case '1':
 			emote = '128557';
@@ -164,6 +168,9 @@ $('#form').submit(function(e) {
 			emote = '128513';
 			rating_in_words = 'Awesome!';
 			break;
+		default:
+			emote = '128542';
+			rating_in_words = 'Poor';
 	}
 
 	course = $('#course').val();
@@ -171,7 +178,7 @@ $('#form').submit(function(e) {
 		course = 'N/A';
 	}
 
-	var commentObj = { date, course, prof_id: id, rating: rate, level_of_difficulty: level, take_again: like_to_take_prof, forCredit: class_taken, textbook_used: textbook, attendance, grade, tags, comments: textarea, emote, rating_in_words };
+	var commentObj = { date: date, course: course, prof_id: id, rating: rate, level_of_difficulty: level, take_again: like_to_take_prof, forCredit: class_taken, textbook_used: textbook, attendance: attendance, grade: grade, tags: tags, comments: textarea, emote: emote, rating_in_words: rating_in_words };
 	console.log(commentObj);
 	$.ajax({
 		method: 'POST',
@@ -180,11 +187,10 @@ $('#form').submit(function(e) {
 	})
 		.done((res) => {
 			$('form')[0].reset();
+			let href = '/prof_info?id=' + id + '&url=' + url;
+			window.location.href = href;
 		})
 		.fail((res) => {});
-
-	let href = '/prof_info?id=' + id + '&url=' + url;
-	window.location.href = href;
 });
 
 // ,r2,r3,r4,rate,grade,text,textarea,level,tags,selectedVal

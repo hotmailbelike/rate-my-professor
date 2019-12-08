@@ -207,13 +207,17 @@ router.get('/prof_info', (req, res) => {
 		takeAgain = (takeAgain / comments.length) * 100;
 		levelOfDifficulty = levelOfDifficulty / comments.length;
 
-		if (!overallQuality) {
+		overallQuality = overallQuality.toPrecision(3);
+		takeAgain = takeAgain.toPrecision(3);
+		levelOfDifficulty = levelOfDifficulty.toPrecision(3);
+
+		if (!overallQuality || isNaN(overallQuality)) {
 			overallQuality = 'N/A';
 		}
-		if (!takeAgain) {
+		if (!takeAgain || isNaN(takeAgain)) {
 			takeAgain = 1;
 		}
-		if (!levelOfDifficulty) {
+		if (!levelOfDifficulty || isNaN(levelOfDifficulty)) {
 			levelOfDifficulty = 1;
 		}
 		if (tags.length == 0 || !tags) {

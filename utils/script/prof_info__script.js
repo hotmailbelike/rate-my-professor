@@ -1,15 +1,3 @@
-// console.log('heloooo')
-
-// ------ without button click---------
-// $('.inactive').click(function(e){
-//     var text = $(this).text()
-//     var tag = $('.tag-box')
-//     var span = $('<span>').attr("class","tag").append(text)
-//     tag.append(span)
-//     console.log(text)
-// })
-// -----------------------------------
-
 var tags = [];
 $('.inactive').click(function(e) {
 	var text = $(this).text();

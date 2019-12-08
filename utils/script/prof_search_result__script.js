@@ -9,7 +9,10 @@ $('.nav-form').submit(function(e) {
 	window.location.href = href;
 });
 
-$('tr').click(function() {
+$('#border-top-bottom').off('click');
+
+$('tr.clickable').click(function() {
+	console.log('object');
 	var id = $(this).attr('id');
 	var url = window.location.href;
 

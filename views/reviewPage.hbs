@@ -19,22 +19,7 @@
 
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="/img/Logo.PNG" id="logo" alt="" />
-      </a>
-      <form autocomplete="off" class="nav-form form-inline">
-        <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search for a Professor" aria-label="Search" />
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-      </form>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="/login">LOG IN / SIGN UP</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  {{>nav}}
 
   <section id="jumbotron">
     <div class="container">
@@ -67,21 +52,15 @@
 
   </section>
 
-  <section id="rating">
+  <section>
     <form class={{id}} id="form">
       <div class="rating">
         <h1><u>It's your turn to grade Professor {{name}}</u></h1>
 
         <ol>
           <li->
-            <h3 id="Rating">Course ID</h3>
-            <!-- <select class="form-control form-control-sm getCode">
-                              <option  value="" disabled selected hidden>Enter course code</option>
-                              <option  value="CSE301">CSE301</option>
-                              <option  value="CSE214">CSE214</option>
-                              <option  value="CSE412">CSE412</option>
-                        
-                            </select> -->
+            <h3>Course ID</h3>
+
             <div class="btn-group dropright">
               <input id="course" class="inCode" type="text" placeholder="Enter Code">
               <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -97,7 +76,7 @@
             <br>
             <br>
             <li>
-              <h3 id="Rating">Rate your professor</h3>
+              <h3>Rate your professor</h3>
               <div class="container">
                 <div class="row">
                   <div class="col-lg-12">
@@ -115,7 +94,7 @@
             </li>
             <br>
             <li>
-              <h3 id="Rating">Level Of Difficulty</h3>
+              <h3>Level Of Difficulty</h3>
               <div class="container">
                 <div class="row">
                   <div class="col-lg-12">
@@ -133,33 +112,33 @@
             </li>
             <br>
             <li>
-              <h3 id="Rating">Would you like to take this prof again?</h3>
+              <h3>Would you like to take this prof again?</h3>
               <input type="radio" class="radio" name="ques" value="Yes">Yes
               <input checked="checked" type="radio" class="radio" name="ques" value="No">No<br>
             </li>
             <br>
 
             <li>
-              <h3 id="Rating">Was This Class taken for Credit?</h3>
+              <h3>Was This Class taken for Credit?</h3>
               <input type="radio" class="radio" name="qu" value="Yes">Yes
               <input checked="checked" type="radio" class="radio" name="qu" value="No">No<br>
             </li>
             <br>
             <li>
-              <h3 id="Rating">Textbook Used?</h3>
+              <h3>Textbook Used?</h3>
               <input type="radio" class="radio" name="question" value="Yes">Yes
               <input checked="checked" type="radio" class="radio" name="question" value="No">No<br>
             </li>
             <br>
             <li>
-              <h3 id="Rating">Attendance Mandatory?</h3>
+              <h3>Attendance Mandatory?</h3>
               <input type="radio" class="radio" name="q" value="Mandatory">Yes
               <input checked="checked" type="radio" class="radio" name="q" value="Not Mandatory">No<br>
             </li>
 
             <br>
             <li>
-              <h3 id="Rating">Grade Recieved</h3>
+              <h3>Grade Recieved</h3>
               <select class="form-control form-control-sm grade">
                 <option value="" disabled selected hidden>Select</option>
                 <option value="A">A</option>
@@ -188,7 +167,7 @@
 
             <li>
               <div class="form-element tagger">
-                <h3 id="rating">Select Tags That Best Describe This Professor</h3>
+                <h3>Select Tags That Best Describe This Professor</h3>
                 <h6>Choose Carefully The Fate Of The Future Student Lies In Your hand</h6>
                 <div class="tag-holder">
                   <a href="#!" class="tag">Gives Feedback</a>
@@ -220,7 +199,7 @@
 
               <div class="input">
                 <li>
-                  <h3 id="Rating">Here's Your Chance To Be More Specific</h3>
+                  <h3>Here's Your Chance To Be More Specific</h3>
                   <textarea rows="8" cols="40" class="textarea"></textarea>
                 </li>
 
@@ -236,12 +215,7 @@
 
     </form>
   </section>
-  <script src="/script/jquery-3.3.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
-    crossorigin="anonymous"></script>
+  {{>scripts}}
   <script src='/script/reviewPage_script.js'></script>
 </body>
 
