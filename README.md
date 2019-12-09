@@ -51,4 +51,4 @@ Review Professors of Different Universities
 3. Type in, "npm i", hit enter and wait till you are able to make input into the terminal again
 4. While still in terminal, type in, "npm start"
 5. In your web browser, in the URL, type in, "localhost:3000/home"
-3. That's it! Have fun!
+6. That's it! Have fun!
