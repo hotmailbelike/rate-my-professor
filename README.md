@@ -39,7 +39,7 @@ Review Professors of Different Universities
 **Rate Professor :**
 
 
-![Prof_info](https://user-images.githubusercontent.com/25118296/70453374-d9ef1480-1ad2-11ea-9403-4885ae0a8266.gif)
+![Rate](https://user-images.githubusercontent.com/25118296/70455616-d1004200-1ad6-11ea-9b2a-e384c893a254.gif)
 
 ---
 <br/>
